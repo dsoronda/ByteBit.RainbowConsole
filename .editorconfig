@@ -1,0 +1,94 @@
+# http://EditorConfig.org
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+
+# This file is the top-most EditorConfig file
+root = true
+
+# All Files
+[*]
+charset = utf-8
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+curly_bracket_next_line = false
+
+# spaces_around_operators  = true, false, hybrid
+spaces_around_operators = true
+# spaces_around_brackets = none, inside, outside, both
+spaces_around_brackets = both
+
+
+# https://en.wikipedia.org/wiki/Indentation_style
+# K&R, Allman, GNU, Horstmann
+indent_brace_style = K&R
+
+# Dotnet Code Style Settings
+# See https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
+# See http://kent-boogaart.com/blog/editorconfig-reference-for-c-developers
+[*.{cs,csx,cake,vb}]
+# official docs
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
+
+insert_final_newline = false
+
+# New Line Options
+# BUG: Warning level cannot be set https://github.com/dotnet/roslyn/issues/18010
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#newline_before_else
+# none, accessors, types, methods, properties, indexers, events, anonymous_methods, control_blocks, anonymous_types, object_collection_array_initalizers, lambdas, local_functions
+# csharp_new_line_before_open_brace = all
+
+csharp_new_line_before_open_brace = none
+csharp_new_line_before_catch = false
+csharp_new_line_before_else = false
+csharp_new_line_before_finally = false
+csharp_new_line_before_members_in_anonymous_types = false
+csharp_new_line_before_members_in_object_initializers = false
+
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#var
+csharp_style_var_for_built_in_types = true
+csharp_style_var_when_type_is_apparent = true
+csharp_style_var_elsewhere = true
+
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#expression_bodied_members
+# TRUE | when_on_single_line | false
+csharp_style_expression_bodied_methods = true
+csharp_style_expression_bodied_constructors = when_on_single_line
+csharp_style_expression_bodied_operators = when_on_single_line
+csharp_style_expression_bodied_properties = when_on_single_line
+csharp_style_expression_bodied_indexers = true
+csharp_style_expression_bodied_accessors = true
+
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#inlined_variable_declarations
+csharp_style_inlined_variable_declaration = true
+
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#expression_level_csharp
+csharp_prefer_simple_default_expression = true
+csharp_style_pattern_local_over_anonymous_function = true
+
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#null_checking
+csharp_style_throw_expression = true
+# this.s = s ?? throw new ArgumentNullException(nameof(s));
+
+csharp_style_conditional_delegate_call = true
+#func?.Invoke(args);
+
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#code_block
+ csharp_prefer_braces = none
+
+ # https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#spacing
+ csharp_space_after_cast = true
+ csharp_space_after_keywords_in_control_flow_statements = true
+ csharp_space_between_method_declaration_parameter_list_parentheses = true
+ csharp_space_between_method_call_parameter_list_parentheses = true
+
+
+# control_flow_statements 	Place space between parentheses of control flow statements
+# expressions 	Place space between parentheses of expressions
+# type_casts Place space between parentheses in type casts
+ csharp_space_between_parentheses = expressions
+
+ csharp_preserve_single_line_statements = false
+ csharp_preserve_single_line_blocks = true
