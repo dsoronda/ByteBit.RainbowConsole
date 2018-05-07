@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Dražen Šoronda</Authors>
+    <Copyright>LGPL 3</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/LGPL-3.0</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/dsoronda/ByteBit.RainbowConsole</PackageProjectUrl>
+    <PackageIconUrl>https://findicons.com/files/icons/1588/farm_fresh_web/32/rainbow.png</PackageIconUrl>
+    <Description>Enrich System.Console with colors.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
+  </ItemGroup>
+
+</Project>
