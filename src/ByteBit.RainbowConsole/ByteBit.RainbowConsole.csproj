@@ -8,6 +8,7 @@
     <PackageProjectUrl>https://github.com/dsoronda/ByteBit.RainbowConsole</PackageProjectUrl>
     <PackageIconUrl>https://findicons.com/files/icons/1588/farm_fresh_web/32/rainbow.png</PackageIconUrl>
     <Description>Enrich System.Console with colors.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
