@@ -16,7 +16,7 @@ namespace ByteBit.RainbowConsole {
 			var separatorIndex = text.IndexOf( separator, startIndex: start );
 			if (separatorIndex == -1) {
 				Console.Write( text );
-				if (newLine) Console.WriteLine( "" );
+				if (newLine) Console.WriteLine();
 				return;
 			}
 
@@ -50,7 +50,7 @@ namespace ByteBit.RainbowConsole {
 			}
 			// dump rest of string
 			text.Substring( start, text.Length - start ).Write();
-			if (newLine) System.Console.WriteLine( "" );
+			if (newLine) System.Console.WriteLine();
 		}
 
 		public static string Parse( FormattableString formattable, string separator = "::" ) {
@@ -58,7 +58,7 @@ namespace ByteBit.RainbowConsole {
 		}
 
 		public static void RainbowWriteText( this FormattableString formattable, string separator = "::", bool newLine = true ) {
-			var text = Rainbow.Parse(formattable,separator);
+			var text = Rainbow.Parse( formattable, separator );
 			text.RainbowWriteParsedText( separator: separator, newLine: newLine );
 		}
 	}

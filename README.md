@@ -6,16 +6,16 @@ Great for use with String interpolation ($ sign).
 
 ## Examples
 
-```csharp
+~~~csharp
 static void Main( string[] args ) {
-	var usingVariable = "Hello";
-	Rainbow.Parse( $"{usingVariable:Cyan} {ConsoleColor.Red:world} using {ConsoleColor.Yellow:Rainbow} {ConsoleColor.Green:console}" ).RainbowWriteParsedText();
+    var usingVariable = "Hello";
+    Rainbow.Parse( $"{usingVariable:Cyan} {ConsoleColor.Red:world} using {ConsoleColor.Yellow:Rainbow} {ConsoleColor.Green:console}" ).RainbowWriteParsedText();
 
-	Rainbow.RainbowWriteText( $"Greetings, this is {ConsoleColor.Red:hello world example} to {ConsoleColor.Green:you} using {nameof( ByteBit.RainbowConsole ):yellow}" );
+    Rainbow.RainbowWriteText( $"Greetings, this is {ConsoleColor.Red:hello world example} to {ConsoleColor.Green:you} using {nameof( ByteBit.RainbowConsole ):yellow}" );
 
-	"Writing with colored line".ColoredLine( foregroundColor: ConsoleColor.Yellow );
+    "Writing with colored line".ColoredLine( foregroundColor: ConsoleColor.Yellow );
 }
-```
+~~~
 
 Screenshot:
 
