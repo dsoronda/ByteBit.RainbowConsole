@@ -2,14 +2,33 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+
+	<PackageId>ByteBit.RainbowConsole</PackageId>
+	<Version>1.0.0</Version>
     <Authors>Dražen Šoronda</Authors>
     <Copyright>LGPL 3</Copyright>
-    <PackageLicenseUrl>https://opensource.org/licenses/LGPL-3.0</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/dsoronda/ByteBit.RainbowConsole</PackageProjectUrl>
-    <PackageIconUrl>https://findicons.com/files/icons/1588/farm_fresh_web/32/rainbow.png</PackageIconUrl>
-    <Description>Enrich System.Console with colors.</Description>
+    <RepositoryUrl>https://github.com/dsoronda/ByteBit.RainbowConsole</RepositoryUrl>
+    <Description>Enrich System.Console with colors.
+
+Used Rainbow icon from Farm-Fresh Web using Creative Commons Attribution (by) licence.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+	<PropertyGroup>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageIcon>rainbow.png</PackageIcon>
+		<PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+		<PackageTags>Console Color</PackageTags>
+		<PackageProjectUrl>https://github.com/dsoronda/ByteBit.RainbowConsole</PackageProjectUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="images\rainbow.png">
+		  <Pack>True</Pack>
+		  <PackagePath></PackagePath>
+		</None>
+		<None Include="licenses\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
