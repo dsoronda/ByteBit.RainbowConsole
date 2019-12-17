@@ -20,6 +20,7 @@ Used Rainbow icon from Farm-Fresh Web using Creative Commons Attribution (by) li
 		<PackageReleaseNotes>Initial release.</PackageReleaseNotes>
 		<PackageTags>Console Color</PackageTags>
 		<PackageProjectUrl>https://github.com/dsoronda/ByteBit.RainbowConsole</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 
 	<ItemGroup>
